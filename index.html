@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AOMG Official</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		*{
+			font-family: 'Montserrat', sans-serif;
+			box-sizing: border-box;
+	    margin: 0;
+	    padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+	
+
+		.navbar {
+			width: 100%;
+			display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: black;
+			padding: 20px;
+			position: fixed;
+               top: 0;
+              /* width: 100% */
+               left: 0;
+               right: 0;
+		}
+
+		.navbar .navbar_menu {
+			display: flex;
+			list-style: none;
+			padding-left: 0;
+		}
+
+		.navbar .navbar_menu a{
+			font-size: 15px;
+			font-weight: bold;
+			color: white;
+			text-decoration: none;
+			margin: 38px;
+		}
+
+		.navbar .navbar_sns {
+			list-style: none;
+			display: flex;
+		}
+
+		.simbol{
+			background-image: url("https://cdn.pixabay.com/photo/2020/11/02/05/56/music-5705801_960_720.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 850px;
+		}
+
+		.text{
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      margin-top: 120px;
+      color:  white;
+      line-height: 60px;
+		}
+
+		.text span {
+      color:#c2272d;
+      opacity: 0;
+      transform: translate(-300px, 0) scale(0);
+      animation:txtE 1.5s infinite;
+    }
+
+    @keyframes txtE {
+      60% {
+           transform: translate(20px, 0) scale(1);
+           color: #4d4d4d;
+          }
+
+      80% {
+           transform: translate(20px, 0) scale(1);
+           color:#c2272d;
+          }
+
+      90% {
+           transform: translate(0) scale(1.2);
+           color:#4d4d4d;
+          }
+
+      100% {
+           transform: translate(0) scale(1);
+           opacity: 1;
+           color:#c2272d;
+          }
+    }
+    .txt_animate span:nth-of-type(2) {
+     animation-delay: .20s;
+     }
+     .txt_animate span:nth-of-type(3) {
+      animation-delay: .20s;
+     }
+     .txt_animate span:nth-of-type(4) {
+      animation-delay: .15s;
+     }
+    .txt_animate span:nth-of-type(5) {
+     animation-delay: .20s;
+     }
+    .txt_animate span:nth-of-type(6) {
+     animation-delay: .25s;
+     }
+
+
+
+		.scroll-link { 
+			position: absolute; 
+			bottom: 1rem; 
+			left: 50%; 
+			transform: translateX(-50%);
+			} 
+			.mouse { 
+				max-width: 1.5rem; 
+				width: 100%; 
+				height: auto;
+				margin-top: 260px;  
+			}
+		@keyframes scroll { 0%, 20% { transform: translateY(0) scaleY(1); } }
+		@keyframes scroll { ... 10% { opacity: 1; } 100% { transform: translateY(36px) scaleY(2); opacity: 0.01; } }
+		.scroll { animation-name: scroll; animation-duration: 2s; animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500); animation-iteration-count: infinite; transform-origin: 50% 20.5px; will-change: transform; }
+
+		.scroll{
+			display: inline-block;
+      vertical-align: middle;
+      margin-top: 220px;
+      margin-left: auto;
+			margin-right: auto;
+
+		}
+
+
+
+
+		h1{
+			font-size: 30px;
+			font-weight: bold;
+			margin-left: 6px;
+			margin-bottom: 40px;
+			margin-top: 100px;
+			clear: left;
+		}
+
+		.container{
+			font-size: 14px;
+			margin-top: 40px;
+			text-align: justify;
+			width: 845px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 180px;
+		}
+
+		.main{
+			width: 1040px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.group{
+			float: left;
+			width: 250px;
+			text-decoration: none;
+	    margin-right: 5px;
+	    margin-left: 5px;
+	    margin-bottom: 140px;
+		}
+		.group .name{
+	    margin-top: 12px;
+	    font-size: 16px;
+	    font-weight: bold;
+	    color: black;
+	    text-align: center;
+    }
+
+    .video{
+			float: left;
+	    margin-right: 5px;
+	    margin-left: 5px;
+	    margin-bottom: 5px;
+		}
+
+    .MULTIMEDIA{
+    	display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+    	float: left;
+    	margin-bottom: 180px;
+    }
+
+    .news{
+			float: left;
+			width: 326px;
+			text-decoration: none;
+	    margin-right: 10px;
+	    margin-left: 10px;
+	    margin-bottom: 300px;
+	    box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.15);
+		}
+		.news .news-container{
+	    margin-top: 16px;
+	    font-size: 16px;
+	    font-weight: bold;
+	    color: black;
+	    text-align: center;
+	    margin-bottom:25px;
+    }
+
+    .section-heading {
+    	font-size: 30px;
+     font-weight: bold;
+     margin-left: 150px;
+	margin-bottom: 40px;
+	clear: left;
+	color: black;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom:15px;
+    color: white;
+  }
+
+  .content1 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
+    clear: left;
+    color: white;
+  }
+  
+  .profile {
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .profile:hover {
+    transform: translateY(13px);
+  }
+  
+  .profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #f7f7f7;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+  }
+
+  .profile:not(:first-child) img {
+    margin-left: -20px;
+  }
+  
+  .profile img:hover + .name{
+    opacity: 1;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+  }
+
+  .site-footer {
+  	display: block;
+  background: black;
+  width: 60%;
+  height: 250px;
+  margin-bottom: 0;
+  margin-top: 80px;
+  float: left;
+  font-size: 15px;
+}
+
+.footer_content{
+	width: 80%;
+	margin-left: 150px;
+	height: 100px;
+	margin-bottom: 0;
+	color: #747474;
+	font-weight: bold;
+	margin-top: 100px;
+
+}
+  .site-footer1 {
+  	display: block;
+  background: black;
+  width: 40%;
+  height: 250px;
+  margin-bottom: 0;
+  margin-top: 80px;
+  float: left;
+  font-size: 15px;
+}
+
+.footer_content1{
+	margin-left: 150px;
+	height: 100px;
+	margin-bottom: 0;
+	color: #747474;
+	font-weight: bold;
+	margin-top: 150px;
+
+}
+    
+  
+
+
+
+
+
+
+
+		
+
+		
+
+
+
+
+
+	
+		
+
+	</style>
+
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="naverbar_logo">
+			<a href="index.html"><img src="images/logo.png" alt="logo" style="width:128px;"></a>
+		</div>
+
+		<ul class="navbar_menu">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="artists.html">ARTISTS</a></li>
+			<li><a href="multimedia.html">MULTIMEDIA</a></li>
+			<li><a href="issue.html">ISSUE</a></li>
+		</ul>
+
+		<ul class="navbar_sns">
+			<a href="https://www.youtube.com/channel/UCW5gbSGTGIukUDsPt2sdhGw"><img src="images/youtube.png" alt="youtube" style="width:30px;"></a>
+			<a href="https://www.instagram.com/aomgofficial/"><img src="images/instagram.png" alt="instagram" style="width:30px;"></a>
+			<a href="https://www.facebook.com/AOMGOFFICIAL"><img src="images/facebook.png" alt="facebook" style="width:30px;"></a>
+			<a href="https://twitter.com/AOMGOFFICIAL"><img src="images/twitter.png" alt="twitter" style="width:30px;"></a>
+			<a href="https://soundcloud.com/aomgofficial"><img src="images/soundcloud.png" alt="soundcloud" style="width:32px;"></a>
+		</ul>
+	</nav>
+	
+
+	<div class="simbol" style="position:relative;">
+
+		<div class="text">
+		 <a name="home"></a>
+		 <p style="opacity: 0;" "margin-top: 0;">a</p>
+		 <p>Above</p> <p>Ordinary</p> <span>Music</span> <p>Group</p>
+		 <div class="scroll">
+		 	<img src="images/scroll.jpg-1.png" alt="aomg members" style="width:18px; ">
+
+		 </div>
+
+		</div>
+	</div>
+
+
+	<div class="main">
+
+	  <div class="HOME">
+	  </div>
+
+
+	  <div class="ABOUT">
+	  	<h1 class="title">ABOUT</h1>
+	  	<img src="images/group.jpg" alt="aomg members" style="width:1040px; ">
+	  	<div class="container">
+	  		<p>
+	  			AOMG 는 2013년 설립 초기부터 현재까지 다양하고 감각적인 음악과 컨텐츠들을 꾸준히 선보이며 힙합씬은 물론 가요계 전체가 주목하는 레이블로 성장해왔다. 뿐만 아니라 레이블 콘서트 투어, 아티스트 별 단독 콘서트 및 월드 투어, 그 외 다양한 방송 출연 및 공연 등을 통해 국내외 각지에서 그 저력을 입증했다. 그리고 이제는 하나의 글로벌 브랜드로 자리 잡았다. <br><br>
+	  			또한, 국내 힙합 레이블 최초로 신인 발굴 오디션 프로그램 [사인히어] 를 기획 및 방영하고, UFC 파이터 ‘코리안 좀비’ 정찬성 선수를 영입하며 스포츠 엔터테인먼트 산업에 도 진출하는 등 다방면으로 그 영향력을 끝없이 넓혀가는 중이다. <br><br>
+          AOMG is a full-service entertainment company founded in 2013, which serves as a hip-hop and R&B record label and artist management. The company has become significant not only in hip-hop scene but also in extensive music industry with the diversity of captivating music and related content. AOMG also proved itself as a global brand by the success of multiple concerts, world tour, and a variety of events not just in domestic market but also in international market. <br><br>
+          Additionally, AOMG produced a reality audition TV program titled [SignHere] by further distinguishing itself as the first hip-hop record label and management in Korea to create such a show. Moreover, the company has continuously expanded its scope of business to sports management by signing with a UFC Fighter; ‘Korean Zombie’ Chan Sung Jung. <br><br>
+	  		</p>
+	  	
+	  	</div>
+		</div>
+
+
+	  <div class="ARTISTS">
+		 <h1 class="title">ARTISTS</h1>
+		 <div class="box">
+			 <a class="group" href="JAYPARK.html">
+				 <img src="images/JAY PARK_B.png" alt="JAY PARK" style="width:250px;">
+				 <p class="name">JAY PARK</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="SIMON.html">
+				 <img src="./images/SIMON_B.JPG" alt="SIMON DOMINIC" style="width:250px;">
+				 <p class="name">SIMON DOMINIC</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="GRAY.html">
+				 <img src="images/GRAY_B.png" alt="GRAY" style="width:250px;">
+				 <p class="name">GRAY</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="LOCO.html">
+				 <img src="images/LOCO_B.png" alt="LOCO" style="width:250px;">
+				 <p class="name">LOCO</p>
+			 </a>
+		 </div>
+
+		  <div class="box">
+			 <a class="group" href="CHACHA.html">
+				 <img src="images/CHACHA_B.png" alt="CHA CHA MALONE" style="width:250px; ">
+				 <p class="name">CHA CHA MALONE</p>
+			 </a>
+		 </div>
+
+		  <div class="box">
+			 <a class="group" href="ELO.html">
+				 <img src="images/ELO.B.jpg" alt="ELO" style="width:250px;">
+				 <p class="name">ELO</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="UGLY.html">
+				 <img src="images/UGLY_B.png" alt="UGLY DUCK" style="width:250px;">
+				 <p class="name">UGLY DUCK</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="WOO.html">
+				 <img src="images/WOO_B.jpg.png" alt="WOO" style="width:250px;">
+				 <p class="name">WOO</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="HOODY.html">
+				 <img src="images/HOODY_B.png" alt="HOODY" style="width:250px;">
+				 <p class="name">HOODY</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="PUMKIN.html">
+				 <img src="images/PUMKIN_B.png" alt="DJ PUMKIN" style="width:250px;">
+				 <p class="name">DJ PUMKIN</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="CODE.html">
+				 <img src="images/CODE_B.png" alt="CODE KUNST" style="width:250px;">
+				 <p class="name">CODE KUNST</p>
+			 </a>
+		 </div>
+
+		  <div class="box">
+			 <a class="group" href="PUNCHNELLO.html">
+				 <img src="images/PUNCHNELLO_B.png" alt="PUNCHNELLO" style="width:250px;">
+				 <p class="name">PUNCHNELLO</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="SOGUMM.html">
+				 <img src="./images/SOGUMM_B.PNG" alt="SOGUMM" style="width:250px;">
+				 <p class="name">SOGUMM</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="KOREANZOMBIE.html">
+				 <img src="./images/KOREANZOMBIE_B.PNG" alt="KOREAN ZOMBIE" style="width:250px;">
+				 <p class="name">KOREAN ZOMBIE</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="DEVITA.html">
+				 <img src="./images/DEVITA_B.PNG" alt="DEVITA" style="width:250px;">
+				 <p class="name">DEVITA</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="LEEHI.html">
+				 <img src="./images/LEEHI_B.PNG" alt="LEEHI" style="width:250px;">
+				 <p class="name">LEEHI</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="GOOSEBUMPS.html">
+				 <img src="./images/GOOSEBUMPS_B.PNG" alt="GOOSEBUMPS" style="width:250px;">
+				 <p class="name">GOOSEBUMPS</p>
+			 </a>
+		 </div>
+
+		 <div class="box">
+			 <a class="group" href="YUGYEOM.html">
+				 <img src="./images/YUGYEOM_B.PNG" alt="YUGYEOM" style="width:250px;">
+				 <p class="name">YUGYEOM</p>
+			 </a>
+			 <div class="clearfix"></div>
+		 </div>
+	  </div>
+
+
+	  <div class="MULTIMEDIA">
+	  	<h1 class="title">MULTIMEDIA</h1>
+	  	<p class="video" align="middle"> <iframe width="1040px" height="585px" src="https://www.youtube.com/embed/MSAN-2CNMVo?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  	<p class="video" align="left"><iframe width="340" height="191.25px" src="https://www.youtube.com/embed/_iOVHaDxXgM?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  	<p class="video" align="left"><iframe width="340" height="191.25" src="https://www.youtube.com/embed/jM4MzG4LrUg?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  	<p class="video" align="left"><iframe width="340" height="191.25" src="https://www.youtube.com/embed/UTm7eGqdI1c?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  </div>
+
+	  <div class="ISSUE">
+	  	<h1 class="title">ISSUE</h1>
+
+	  		<div class="issue-container">
+	  		 <a class="news" href="http://www.topdaily.kr/news/articleView.html?idxno=106383">
+				 <img src="images/issue01.png" alt="issue01" style="width:326px;" height="380px">
+				 <p class="news-container">
+				 유겸, 첫 솔로 앨범 [Point Of View: U] <br> 트랙리스트 공개…AOMG 사단 대거 참여</p>
+				 </a>
+				</div>
+
+				<div class="issue-container">
+	  		 <a class="news" href="http://www.sportsworldi.com/newsView/20210612504618">
+				 <img src="images/issue02.png" alt="issue02" style="width:326px;" height="380px">
+				 <p class="news-container">
+				 갓세븐 유겸, <br> AOMG서 성공적인 홀로서기</p>
+				 </a>
+				</div>
+
+				<div class="issue-container">
+	  		 <a class="news" href="https://mnb.moneys.mt.co.kr/mnbview.php?no=2021060710128043117&ref=https%3A%2F%2Fsearch.naver.com">
+				 <img src="images/is.jpg" alt="issue03" style="width:326px;" height="380px">
+				 <p class="news-container">
+				 프레시지, AOMG 요리 예능 콘텐츠 <br>밀키트 제품 4종 출시</p>
+				 </a>
+				</div>
+		
+			</div>
+	  </div>
+	</div>
+
+
+	  <div class="bottom">
+	  	<section class="team">
+               <h2 class="section-heading">FOLLOW AOMG</h2>
+               <div class="content">
+
+               	<p class="first">
+                   
+                    <div class="profile">
+                         <img src="images/jaypark_pro.png" alt=""/>
+                    </div>
+                    <div class="profile">
+                         <img src="images/simon_pro.png" alt=""/>
+                    </div>
+               <div class="profile">
+                         <img src="images/gray_pro.png" alt=""/>
+               </div>
+               <div class="profile">
+                         <img src="images/loco_pro.png" alt=""/>
+               </div>
+               <div class="profile">
+                         <img src="images/CHACHA_B.png" alt=""/>
+               </div>
+               <div class="profile">
+                         <img src="images/elo_pro.png" alt=""/>
+               </div>
+               <div class="profile">
+                         <img src="images/ugly_pro.png" alt=""/>
+               </div>
+               <div class="profile">
+                         <img src="images/woo_pro.png" alt=""/>
+                    </div>
+                   
+                    <div class="profile">
+                         <img src="images/hoody_pro.png" alt=""/>
+                    </div>
+          </p>
+     </div>
+
+
+
+          <div class="content1">
+          <p class="second">
+                    <div class="profile">
+                         <img src="images/dj_pro.png" alt=""/>
+                    </div>
+               <div class="profile">
+                         <img src="images/code_pro.png" alt=""/>
+               </div>
+               <div class="profile">
+                         <img src="images/punch_pro.png" alt=""/>
+               </div>
+               <div class="profile">
+                         <img src="images/sogumm_pro.png" alt=""/>
+               </div>
+               <div class="profile">
+                         <img src="images/korean_pro.png" alt=""/>
+               </div>
+               <div class="profile">
+                         <img src="images/devita_pro.png" alt=""/>
+
+               </div>
+               <div class="profile">
+                         <img src="images/leehi_pro.png" alt=""/>
+                    </div>
+                   
+                    <div class="profile">
+                         <img src="images/GOOSEBUMPS_B.png" alt=""/>
+                    </div>
+                    <div class="profile">
+                         <img src="images/YUGYEOM_B.png" alt=""/>
+                    </div>
+          </p>
+
+
+        
+               </div>
+         </section>
+
+         <footer class="site-footer">
+         	<div class="footer_content">
+         		<p class="one">
+         		<img src="images/logo_gray.png" alt=""/ style="width: 80px;"><br><br>
+         	     <p>서울특별시 강남구 도산대로 49길 16-4 2-4층</p>
+         	     </p>
+
+         	</div>
+         </footer>
+         <footer class="site-footer1">
+         	<div class="footer_content1">
+         		<p class="two">
+         		<p>infornation : info@aomgofficial.com</p>
+         	     </p>
+
+         	</div>
+         </footer>
+	  </div>
+
+</body>
+</html>
